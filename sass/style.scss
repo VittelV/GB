@@ -756,8 +756,244 @@ body{
 }
 
 
+.TopSlider{
+    height: 777px;
+    width: 100%;
+    overflow: hidden;
+    
+    position: relative;
+    
+    &Button{
+        height: 47px;
+        width: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2A2A2A15;
+        position: absolute;
+        z-index: 9;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        &.left{
+            left: 0;
+        }
+        
+        &.right{
+             right: 0;   
+        }    
+    }
+    
+    &Items{
+        width: 100%;
+    }
+    
+    &Item{
+        img{
+            height: 90%;
+            width: auto;
+            
+            @media(max-width: 500px){
+                    height: 80%;
+                    width: auto;
+            }
+        }
+        
+        
+        background-color: #f7f7f7;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
+.ProductDescription{
+    position: relative;
+    top: -64px;
+    z-index: 9;
+    
+    @media(max-width: 500px){
+        top: 0px;
+    }
+    
+    .container{
+       padding: 64px 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eaeaea; 
+        
+        @media(max-width: 500px){
+            padding: 32px 0;
+        }
+    }
+    
+    &subTitle{
+        text-align: center;
+    text-transform: uppercase;
+    color: #f16d7f;
+    font-weight: 300;
+    font-size: 14px;
+    margin: auto;
+    }
+    
+    ln{
+        width: 64px;
+    height: 3px;
+    background-color: #ef5b70;
+    display: block;
+    margin: 12px;
+    }
+    
+    &Title{
+        font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    }
+    
+    &Info{
+        text-align: center;
+    max-width: 555px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5e5e5e;
+    margin-bottom: 32px;
+    margin-top: 50px;
+    }
+    
+    &Price{
+           margin-bottom: 65px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #ef5b70; 
+    }
+    
+    &Sort{
+        width: 640px;
+    display: flex;
+    justify-content: center;    
+    padding-top: 64px;
+    border-top: 1px solid #eaeaea;
+        
+        @media(max-width: 500px){
+              max-width: 90%;  
+        }
+        
+        select{
+            margin: auto 11px;
+            border: unset;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px;
+            color: #6f6f6f;
+            outline: unset;
+            
+            @media(max-width: 500px){
+                margin: auto;
+                font-size: 11px;
+            }
+        }
+        
+    }
+    
+    &ToCart{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f26376;
+    font-size: 16px;
+    padding: 16px 56px 16px 25px;
+    border: 1px solid #f26376;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: .3s;    
+        
+        svg{
+            margin-right: 22px;
+            
+            path{
+                fill: #f26376;
+            }
+        }
+        
+        &:hover{
+            background-color: #f26376;
+            color: #fff;
+            svg path{
+                fill: #fff;
+            }
+        }
+        
+    }
+    
+    
+}
 
+.TopProduct{
+    
+    background-color: #f8f3f4;
+    .container{
+        display: flex;
+        padding: 60px 0;
+        
+        @media(max-width: 500px){
+            padding: 10px 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+    
+    &Name{
+        align-items: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f26376;
+    font-size: 24px;
+    margin: unset;
+    }
+    
+    &Breadcrumps{
+        display: flex;
+    align-items: center;
+    margin-left: auto;
+        text-transform: uppercase;
+        
+        @media(max-width: 500px){
+            margin-left: unset;
+            margin-top: 20px;
+        }
+        
+        &Item{
+            margin-right: 5px;
+    
+            &:last-child{
+                    color: #f26376;
+                    font-weight: 700;
+                }
+            a{
+                    text-decoration: unset;
+                    color: inherit;
+                    margin-right: 5px;
+                
+                &:hover{
+                    color: #f26376;
+                }
+                
+                
+            }
+            
+            
+        }
+        
+    }
+    
+    
+}
 
 
 

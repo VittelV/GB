@@ -490,3 +490,35 @@ body {
       background-color: #f16d7f; }
       .FooterSocLink:hover svg path {
         fill: #fff; }
+
+.TopSlider {
+  height: 777px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .TopSliderButton {
+    height: 47px;
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A2A2A15;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%); }
+    .TopSliderButton.left {
+      left: 0; }
+    .TopSliderButton.right {
+      right: 0; }
+  .TopSliderItems {
+    width: 100%; }
+  .TopSliderItem {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .TopSliderItem img {
+      height: 100%;
+      width: auto; }
